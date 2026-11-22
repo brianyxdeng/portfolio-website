@@ -1,8 +1,5 @@
-import { ReactLenis } from 'lenis/react';
+import { ReactLenis } from "lenis/react";
 
 export default function Scroll() {
-    return (
-        <ReactLenis root>
-        </ReactLenis>
-    );
+	return <ReactLenis root options={{ anchors: { offset: 0 } }} />;
 }

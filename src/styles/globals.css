@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-* {
-	scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
 :root {
@@ -13,7 +15,6 @@
 	--purple: #7982ef;
 	--text-primary: var(--foreground);
 	--text-secondary: #a3a3a3;
-	--text-muted: #85858b;
 	--accent: var(--purple);
 }
 
@@ -26,6 +27,14 @@ body {
 	background-color: color-mix(in srgb, var(--bg-secondary) 82%, transparent);
 	backdrop-filter: blur(18px);
 	box-shadow: 0 2px 10px rgb(0 0 0 / 14%);
+}
+
+.background-effects-disabled .shader-background {
+	display: none;
+}
+
+.background-effects-disabled .home {
+	box-shadow: none;
 }
 
 /* Custom scrollbar */

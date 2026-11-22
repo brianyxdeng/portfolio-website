@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export interface ProjectsCardProps {
     title: string;
     description: string;
@@ -23,9 +25,12 @@ export default function ProjectsCard({ title, description, demoUrl, thumbnail }:
                 )}
             </div>
             {thumbnail && (
-                <img
+                <Image
                     src={thumbnail}
                     alt={`${title} preview`}
+                    width={128}
+                    height={96}
+                    sizes="(min-width: 640px) 128px, 80px"
                     className="h-16 w-20 shrink-0 rounded-md border border-(--outline) object-cover sm:h-24 sm:w-32"
                 />
             )}

@@ -15,7 +15,7 @@ export default function Skills() {
                     <SkillsCard icon="/icons/react-icon.svg" text="React.js"/>
                     <SkillsCard icon="/icons/tailwind-icon.svg" text="Tailwind CSS"/>
                     <SkillsCard icon="/icons/nodejs-icon.svg" text="Node.js"/>
-                    <SkillsCard icon="/icons/nodejs-icon.svg" text="Express.js"/>
+                    <SkillsCard icon="/icons/express-icon.svg" text="Express.js"/>
                     <SkillsCard icon="/icons/git-icon.svg" text="Git"/>
                 </div>
             </div>

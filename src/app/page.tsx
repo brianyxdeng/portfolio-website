@@ -6,18 +6,17 @@ import Scroll from "@/components/utils/Scroll";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
+import { BackgroundEffectsProvider } from "@/components/utils/BackgroundEffects";
 
 /* TODO
 	Add more to the projects section
 	Add resume to about section
 	Figure out props / and better project layout and structure
-	change the noscript tag to make the box shadow and shader disappear, keep everything else the same, remove navbar button, etc.
-	compatible on mobile (center the divs and make it overlap)
 */
 
 export default function Home() {
 	return (
-		<>
+		<BackgroundEffectsProvider>
 			<Scroll />
 			<Navbar />
 			<Gradient />
@@ -26,6 +25,6 @@ export default function Home() {
 			<Skills />
 			<Projects />
 			<Footer />
-		</>
+		</BackgroundEffectsProvider>
 	);
 }

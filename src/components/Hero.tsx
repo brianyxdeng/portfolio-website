@@ -8,7 +8,7 @@ export default function Hero() {
 		<section className="home box-shadow flex min-h-screen items-center justify-center px-6 py-24 sm:px-8 lg:px-12" id="home">
 			<div className="relative mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-10 text-center sm:flex-row sm:justify-center sm:gap-12 sm:text-left">
 				<div className="flex w-full max-w-2xl flex-col items-center justify-center gap-4 text-white sm:items-start">
-					<p className="text-lg font-normal">Hi, I'm</p>
+					<p className="text-lg font-normal">Hi, I&apos;m</p>
 					<h1 className="text-[40px] font-medium leading-[1.08] sm:text-5xl lg:text-7xl">Brian Deng</h1>
 					<p className="text-lg font-normal sm:text-xl">Full stack developer based in Canada.</p>
 
