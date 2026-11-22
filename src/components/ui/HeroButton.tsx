@@ -1,23 +1,23 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as motion from "motion/react-client";
 
 interface HeroButtonProps {
     icon: IconDefinition;
+    label: string;
     className?: string;
     href?: string;
 }
 
-export default function HeroButton({ icon, className, href }: HeroButtonProps) {
+export default function HeroButton({ icon, label, className, href }: HeroButtonProps) {
     return (
-        <a href={href} target="_blank">
-            <motion.button
-                className={`bg-black w-12 h-12 cursor-pointer border-[#7982ef] border-2 rounded-[50%] ${className}`}
-                whileHover={{ scale: 1.05, rotate: -15 }}
-                transition={{ duration: 0.2 }}
-            >
-                <FontAwesomeIcon icon={icon} className="" />
-            </motion.button>
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className={`flex h-11 w-11 items-center justify-center rounded-lg border border-(--outline) bg-(--bg-secondary) text-(--foreground) transition-colors duration-150 hover:bg-(--bg-tertiary) focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-(--purple) ${className ?? ""}`}
+        >
+            <FontAwesomeIcon icon={icon} aria-hidden="true" />
         </a>
     );
 }

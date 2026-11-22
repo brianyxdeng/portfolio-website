@@ -8,24 +8,26 @@ export default function About() {
             id="about"
             description={[
                 <>
-                    Hey 👋, I'm Brian Deng, a freelance full stack developer based in Canada. Click {" "}
+                    Hey 👋, I'm Brian Deng, a full stack developer currently living in {" "}
+                    <Link className="hover:underline" href={"https://www.google.ca/maps?q=vancouver+bc+canada"} target="_blank">
+                        Vancouver
+                    </Link>. 
+                    Click {" "}
                     <Link className="font-bold hover:underline" href="" target="_blank">
                         here
                     </Link>
                     {" "} for my resume.
                 </>,
                 <>
-                    High school senior with over six years of combined experience in full-stack development, SaaS, JS / TS and Python technologies.
-                    My work emphasizes the importance of creating high quality applications. Always looking for new opportunities to learn and improve.
+                    I'm also a computer science student at UBC with over six years of combined experience with full-stack development, JavaScript/TypeScript, and Python. 
+                    My stack includes Next.js, React, Express, MongoDB, and Redux. 
                 </>,
                 <>
-                    Stack: Next.js & React, TypeScript, Express, MongoDB, Redux
-                </>,
-                <>
-                    Currently living in {""}
-                    <Link className="hover:underline" href={"https://www.google.ca/maps?q=,+Edmonton,+AB,+,+ca"} target="_blank">
-                        Edmonton, Canada.
+                    I'm always looking for new opportunities to learn and improve. Feel free to reach out at {" "}
+                    <Link className="font-bold hover:underline" href={"mailto:brian.d3.2008@gmail.com"} target="_blank">
+                        brian.d3.2008@gmail.com
                     </Link>
+                    !
                 </>
             ]}
         />

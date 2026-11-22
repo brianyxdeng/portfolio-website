@@ -5,17 +5,17 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
 	return (
-		<section className="home box-shadow flex min-h-screen items-center justify-center gap-20 p-12" id="home">
-			<div className="w-full relative flex gap-40 justify-center items-center">
-				<div className="w-2xl h-full flex flex-col justify-center gap-4 text-white">
-					<p className="text-lg font-light">Hi, I'm</p>
-					<h1 className="text-8xl font-extrabold">Brian Deng</h1>
-					<p className="text-xl font-extralight">Full stack developer based in Canada.</p>
+		<section className="home box-shadow flex min-h-screen items-center justify-center px-6 py-24 sm:px-8 lg:px-12" id="home">
+			<div className="relative mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-10 text-center sm:flex-row sm:justify-center sm:gap-12 sm:text-left">
+				<div className="flex w-full max-w-2xl flex-col items-center justify-center gap-4 text-white sm:items-start">
+					<p className="text-lg font-normal">Hi, I'm</p>
+					<h1 className="text-[40px] font-medium leading-[1.08] sm:text-5xl lg:text-7xl">Brian Deng</h1>
+					<p className="text-lg font-normal sm:text-xl">Full stack developer based in Canada.</p>
 
-					<div className="flex flex-row gap-4 pt-4">
-						<HeroButton icon={faLinkedin} href="https://www.linkedin.com/in/brian-deng-597859356/" />
-						<HeroButton icon={faGithub} href="https://github.com/br-iscool" />
-						<HeroButton icon={faEnvelope} href="mailto:brian.d3.2008@gmail.com" />
+					<div className="flex flex-row gap-3 pt-2">
+						<HeroButton icon={faLinkedin} label="LinkedIn" href="https://www.linkedin.com/in/brianyxdeng/" />
+						<HeroButton icon={faGithub} label="GitHub" href="https://github.com/brianyxdeng" />
+						<HeroButton icon={faEnvelope} label="Email" href="mailto:brian.d3.2008@gmail.com" />
 					</div>
 				</div>
 

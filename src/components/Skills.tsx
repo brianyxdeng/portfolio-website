@@ -2,12 +2,12 @@ import SkillsCard from "./ui/SkillsCard";
 
 export default function Skills() {
     return (
-        <section className="relative bg-(--bg-primary) flex align-center justify-center p-32" id="skills">
-            <div className="flex flex-col align-center text-center max-w-5xl mx-auto">
-                <div className="pb-12 text-center">
-                    <h1 className="font-bold text-4xl">Skills</h1>
+        <section className="relative flex justify-center bg-(--bg-primary) px-6 pt-20 pb-0 sm:pt-24" id="skills">
+            <div className="mx-auto w-full max-w-5xl">
+                <div className="mb-8 sm:mb-10">
+                    <h2 className="text-left text-3xl font-medium sm:text-4xl">Skills</h2>
                 </div>
-                <div className="flex flex-wrap gap-5 justify-center">
+                <div className="grid grid-cols-1 gap-3 text-left sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
                     <SkillsCard icon="/icons/js-icon.svg" text="JavaScript"/>
                     <SkillsCard icon="/icons/ts-icon.svg" text="TypeScript"/>
                     <SkillsCard icon="/icons/python-icon.svg" text="Python"/>

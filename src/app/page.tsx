@@ -8,12 +8,10 @@ import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 
 /* TODO
-	Convert skills section and about section to a single resume section and move the education / experience section to show on top
-	Do projects section
+	Add more to the projects section
 	Add resume to about section
-	Add animations to everything
 	Figure out props / and better project layout and structure
-	<noscript> tag to display "this page cannot be viewed without javascript"
+	change the noscript tag to make the box shadow and shader disappear, keep everything else the same, remove navbar button, etc.
 	compatible on mobile (center the divs and make it overlap)
 */
 
@@ -25,6 +23,7 @@ export default function Home() {
 			<Gradient />
 			<Hero />
 			<About />
+			<Skills />
 			<Projects />
 			<Footer />
 		</>

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { openSans } from "@/utils/fonts";
 import { useState } from "react";
 import Link from "next/link";
 import NavButton from "./ui/NavButton";
@@ -17,27 +16,23 @@ export default function Navbar() {
 
     return (
         <motion.header
-            className={`fixed inset-0 top-7 z-50 mx-auto flex h-[50px] max-w-4xl rounded-full p-3 px-2 font-medium shadow-md ring-2 ring-(--purple) backdrop-blur-3xl ${openSans.className}`}
+            className="nav-shell fixed left-4 right-4 top-4 z-50 mx-auto flex h-14 max-w-4xl items-center rounded-xl border border-(--outline) px-3 font-medium sm:px-5"
             initial={{ y: 0 }}
             animate={{ y: hidden ? -100 : 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-            <motion.div
-                className="flex items-center justify-center pl-5"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3}}
-            >
-                <Link href={"/"} className="py-4 text-xs font-bold duration-75">{"Home"}</Link>
-            </motion.div>
-            <ul className="w-full flex-col justify-center gap-10 max-sm:gap-5 max-sm:pt-10 sm:flex sm:flex-row">
+            <div className="flex shrink-0 items-center justify-center pr-3 sm:pr-6">
+                <Link href="/" className="text-sm font-medium text-(--text-primary)">Home</Link>
+            </div>
+            <ul className="flex min-w-0 flex-1 items-center justify-center gap-3 sm:gap-8">
                 <li>
-                    <Link href={"#about"} className="py-4 text-[12.5px] transition duration-500 hover:text-(--purple)">{"About"}</Link>
+                    <Link href="#about" className="text-sm text-(--text-secondary) transition-colors duration-150 hover:text-(--text-primary)">About</Link>
                 </li>
                 <li>
-                    <Link href={"#skills"} className="py-4 text-[12.5px] transition duration-500 hover:text-(--purple)">{"Skills"}</Link>
+                    <Link href="#skills" className="text-sm text-(--text-secondary) transition-colors duration-150 hover:text-(--text-primary)">Skills</Link>
                 </li>
                 <li>
-                    <Link href={"#projects"} className="py-4 text-[12.5px] transition duration-500 hover:text-(--purple)">{"Projects"}</Link>
+                    <Link href="#projects" className="text-sm text-(--text-secondary) transition-colors duration-150 hover:text-(--text-primary)">Projects</Link>
                 </li>
             </ul>
 
